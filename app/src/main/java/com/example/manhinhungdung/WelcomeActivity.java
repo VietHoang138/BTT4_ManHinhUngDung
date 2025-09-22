@@ -42,7 +42,7 @@ public class WelcomeActivity extends AppCompatActivity {
         // Xử lý sự kiện nút Create Account
         btnCreateAccount.setOnClickListener(v -> {
             // Chuyển sang màn hình CreateAccountActivity (sẽ code sau)
-            // startActivity(new Intent(WelcomeActivity.this, CreateAccountActivity.class));
+            startActivity(new Intent(WelcomeActivity.this, CreateAccountActivity.class));
             Toast.makeText(this, "Đi tới Create Account (giả lập)", Toast.LENGTH_SHORT).show();
         });
     }
