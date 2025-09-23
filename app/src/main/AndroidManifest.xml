@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CreateAccountActivity" />
+        <activity android:name=".SetPaymentActivity" />
     </application>
 
 </manifest>

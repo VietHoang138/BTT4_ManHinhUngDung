@@ -24,6 +24,12 @@ public class CreateAccountActivity extends AppCompatActivity {
         editTextPassword = findViewById(R.id.editTextPassword);
         btnCreateAccount = findViewById(R.id.btnCreateAccount);
 
+        // Nhận phương thức thanh toán (nếu có) từ SetPaymentActivity
+        String paymentMethod = getIntent().getStringExtra("paymentMethod");
+        if (paymentMethod != null && !paymentMethod.isEmpty()) {
+            Toast.makeText(this, "Đã chọn phương thức: " + paymentMethod, Toast.LENGTH_SHORT).show();
+        }
+
         // Xử lý sự kiện khi nhấn Create Account
         btnCreateAccount.setOnClickListener(v -> {
             String firstName = editTextFirstName.getText().toString().trim();

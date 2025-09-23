@@ -34,8 +34,8 @@ public class WelcomeActivity extends AppCompatActivity {
                 // Chưa có backend nên chỉ giả lập
                 Toast.makeText(this, "Đăng nhập thành công (giả lập)", Toast.LENGTH_SHORT).show();
 
-                // Chuyển sang màn hình SetPaymentActivity (sẽ làm sau)
-                // startActivity(new Intent(WelcomeActivity.this, SetPaymentActivity.class));
+                // Điều hướng sang SetPaymentActivity
+                startActivity(new Intent(WelcomeActivity.this, SetPaymentActivity.class));
             }
         });
 
