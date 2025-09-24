@@ -24,7 +24,7 @@ public class BankSelectionActivity extends AppCompatActivity {
     }
 
     private void goToNext(String bankName) {
-        Intent intent = new Intent(BankSelectionActivity.this, CreateAccountActivity.class);
+        Intent intent = new Intent(BankSelectionActivity.this, AccountVerificationActivity.class);
         intent.putExtra("BANK_NAME", bankName);
         startActivity(intent);
     }

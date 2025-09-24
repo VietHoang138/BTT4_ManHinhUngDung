@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_screen_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xác minh tài khoản"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFFFF"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vui lòng nhập số tài khoản và OTP"
+            android:textSize="14sp"
+            android:textColor="#E6FFFFFF"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:elevation="6dp"
+            android:padding="20dp"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/txtSelectedBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Bank: "
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/edtAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:hint="Enter Account Number"
+                android:inputType="number"
+                android:padding="14dp"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/edtOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:hint="Enter OTP"
+                android:inputType="numberPassword"
+                android:padding="14dp"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnVerify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verify Account"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFFFF"
+                android:background="@drawable/bg_button_primary" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="32dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

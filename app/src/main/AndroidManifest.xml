@@ -24,7 +24,8 @@
         <activity android:name=".CreateAccountActivity" />
         <activity android:name=".SetPaymentActivity" />
         <activity android:name=".BankSelectionActivity" />
-
+        <activity android:name=".AccountVerificationActivity" />
+        <activity android:name=".SuccessActivity" />
     </application>
 
 </manifest>
