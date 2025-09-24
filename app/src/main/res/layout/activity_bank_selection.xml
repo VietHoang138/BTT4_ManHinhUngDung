@@ -6,86 +6,88 @@
     android:background="@drawable/bg_screen_gradient">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:padding="24dp"
         android:gravity="center_horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome Back"
-            android:textColor="#FFFFFFFF"
+            android:text="Chọn ngân hàng"
             android:textSize="28sp"
             android:textStyle="bold"
+            android:textColor="#FFFFFFFF"
             android:layout_marginTop="32dp"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="12dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Đăng nhập để tiếp tục"
-            android:textColor="#E6FFFFFF"
+            android:text="Danh sách ngân hàng hỗ trợ"
             android:textSize="14sp"
-            android:layout_marginBottom="24dp"/>
+            android:textColor="#E6FFFFFF"
+            android:layout_marginBottom="20dp" />
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:background="@drawable/bg_card"
             android:elevation="6dp"
-            android:padding="20dp"
+            android:padding="16dp"
             android:layout_margin="8dp">
 
-            <!-- Email input -->
-            <EditText
-                android:id="@+id/editTextEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_input"
-                android:hint="Email"
-                android:inputType="textEmailAddress"
-                android:padding="14dp"
-                android:layout_marginBottom="14dp"/>
-
-            <!-- Password input -->
-            <EditText
-                android:id="@+id/editTextPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_input"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:padding="14dp"
-                android:layout_marginBottom="18dp"/>
-
-            <!-- Sign In button -->
             <Button
-                android:id="@+id/btnSignIn"
+                android:id="@+id/btnBank1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sign In"
+                android:text="Vietcombank"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFFFF"
                 android:background="@drawable/bg_button_primary"
-                android:layout_marginBottom="12dp"/>
+                android:layout_marginBottom="12dp"
+                android:padding="12dp" />
 
-            <!-- Create Account button -->
             <Button
-                android:id="@+id/btnCreateAccount"
+                android:id="@+id/btnBank2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Create Account"
+                android:text="Techcombank"
                 android:textAllCaps="false"
-                android:textColor="#FF3E8BFF"
-                android:background="@android:color/transparent"/>
+                android:textColor="#FFFFFFFF"
+                android:background="@drawable/bg_button_primary"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btnBank3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BIDV"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFFFF"
+                android:background="@drawable/bg_button_primary"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btnBank4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VPBank"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFFFF"
+                android:background="@drawable/bg_button_primary"
+                android:padding="12dp" />
+
         </LinearLayout>
 
         <Space
             android:layout_width="0dp"
             android:layout_height="32dp"/>
+
     </LinearLayout>
 
 </ScrollView>
